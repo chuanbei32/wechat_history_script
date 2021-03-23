@@ -10,7 +10,7 @@
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
-// @updateURL wecaht
+// @updateURL https://raw.githubusercontent.com/chuanbei32/wechat_history_script/main/wecaht.js
 // @match *://aladdin2.baidu.com/*
 // @grant GM_xmlhttpRequest
 // @grant unsafeWindow
