@@ -10,7 +10,7 @@
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
-// @updateURL https://gitee.com/chuanbei32/bd/raw/master/cookie.js
+// @updateURL wecaht
 // @match *://aladdin2.baidu.com/*
 // @grant GM_xmlhttpRequest
 // @grant unsafeWindow
