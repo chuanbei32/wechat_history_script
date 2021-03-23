@@ -1,5 +1,27 @@
 
 
+
+
+
+// ==UserScript==
+// @name 微信历史文章
+// @namespace chuanbei32
+// @version 0.0.1
+// @description 微信历史文章
+// @author chuanbei32
+// @iconURL
+// @updateURL https://gitee.com/chuanbei32/bd/raw/master/cookie.js
+// @match *://aladdin2.baidu.com/*
+// @grant GM_xmlhttpRequest
+// @grant unsafeWindow
+// @require https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
+// @require https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.min.js
+// ==/UserScript==
+
+
+
+(function() {
+    'use strict';
 function init() {
     var body_ele = document.getElementsByTagName('body')[0];
     body_ele.insertAdjacentHTML('afterbegin', `
@@ -246,6 +268,15 @@ function make_csv() {
     }    
 }
 
-$(function(){
-	init();
-});
+   
+
+    var injquery = document.createElement('script');
+    injquery.setAttribute("src","https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js");
+    document.body.appendChild(injquery);
+
+    var inaxios = document.createElement('script');
+    inaxios.setAttribute("src","https://cdn.bootcdn.net/ajax/libs/axios/0.21.0/axios.min.js");
+    document.body.appendChild(inaxios);
+
+   
+})();
