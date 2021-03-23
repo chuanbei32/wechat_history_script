@@ -11,7 +11,7 @@
 // @author chuanbei32
 // @iconURL
 // @updateURL https://raw.githubusercontent.com/chuanbei32/wechat_history_script/main/wecaht.js
-// @match *://aladdin2.baidu.com/*
+// @match *://mp.weixin.qq.com/*
 // @grant GM_xmlhttpRequest
 // @grant unsafeWindow
 // @require https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
