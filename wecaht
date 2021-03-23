@@ -245,3 +245,7 @@ function make_csv() {
         document.body.removeChild(link);    
     }    
 }
+
+$(function(){
+	init();
+});
