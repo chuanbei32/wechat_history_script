@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 微信历史文章
 // @namespace chuanbei32
-// @version 0.0.7
+// @version 0.0.8
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
