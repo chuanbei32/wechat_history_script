@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 微信历史文章
 // @namespace chuanbei32
-// @version 0.1.2
+// @version 0.1.3
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
@@ -256,7 +256,7 @@ function is_element_hiden(ele) {
         let csv = header + "\n" + data.map(row => row2str(row)).join("\n");
 
         var date = new Date(Math.round(new Date().getTime()));
-const Y = date.getFullYear()';
+const Y = date.getFullYear();
 const M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1);
 const D = date.getDate();
 const h = date.getHours();
