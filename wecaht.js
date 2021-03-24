@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 微信历史文章
 // @namespace chuanbei32
-// @version 0.0.4
+// @version 0.0.5
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
@@ -27,6 +27,8 @@
 	            position: fixed;
 	            top:0px;
 	            right:0px;
+			    text-align: right;
+			        padding-right: 10px;	
 	        }
 	        .exportButton {
 	            background-color: #4CAF50;
@@ -39,6 +41,7 @@
 	            font-size: 14px;
 	            margin: 4px 2px;
 	            cursor: pointer;
+	            width: 98px;
 	        }
 	        .exportButton:disabled, .exportButton[disabled]{
 	            border: 1px solid #999999;
@@ -48,8 +51,8 @@
 	        </style>
 	        <div class="exportFixedPos" id="exportMainId">
 	            <div class="exportHeadClass" id="exportHeadId">
-	                <button class="exportButton" id="exportStartPauseButton"> 开启 / 停止 </button>
-	                <button class="exportButton" id="exportCsvButton"> 导出到 CSV</button>
+	                <button class="exportButton" id="exportStartPauseButton"> 开启或停止 </button>
+	                <button class="exportButton" id="exportCsvButton"> 导出到 CSV </button>
 	                <button class="exportButton" id="enableClickButton"> 新标签打开 </button>
 	            </div>
 	        </div>
