@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 微信历史文章
 // @namespace chuanbei32
-// @version 0.0.5
+// @version 0.0.6
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
@@ -245,9 +245,10 @@ function is_element_hiden(ele) {
     function make_csv() {
         function row2str(row_dict) {
             let d = row_dict;
-            return `${d["date"]},${d["card_type"]},${d["id"]}/${d["count"]},"${d["title"]||""}","${d["text"]||""}","${d["href"]||""}"`;
+            return `${d["date"]},${d["card_type"]},${d["id"]}/${d["count"]},"${d["title"]||""}"}","${d["href"]||""}"`;
         }
-        let header = "date,card_type,id_count,title,text,href";
+        // let header = "date,card_type,id_count,title,text,href";
+        let header = "date,card_type,id_count,title,href";
 
         let data = get_history_info();
         // [A way to generate and download CSV files client-side · Issue #175 · mholt/PapaParse](https://github.com/mholt/PapaParse/issues/175#issuecomment-201308792)
