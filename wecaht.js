@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 微信历史文章
 // @namespace chuanbei32
-// @version 0.1.0
+// @version 0.0.3
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
@@ -255,7 +255,7 @@ function is_element_hiden(ele) {
         // [How to export JavaScript array info to csv (on client side)? - Stack Overflow](https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side)
         let csv = header + "\n" + data.map(row => row2str(row)).join("\n");
 
-        var date = new Date(Math.round(new Date().getTime());
+        var date = new Date(Math.round(new Date().getTime()));
 Y = date.getFullYear() + '-';
 M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
 D = date.getDate() + ' ';
