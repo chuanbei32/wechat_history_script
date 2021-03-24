@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 微信历史文章
 // @namespace chuanbei32
-// @version 0.0.6
+// @version 0.0.7
 // @description 微信历史文章
 // @author chuanbei32
 // @iconURL
@@ -254,7 +254,7 @@ function is_element_hiden(ele) {
         // [A way to generate and download CSV files client-side · Issue #175 · mholt/PapaParse](https://github.com/mholt/PapaParse/issues/175#issuecomment-201308792)
         // [How to export JavaScript array info to csv (on client side)? - Stack Overflow](https://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side)
         let csv = header + "\n" + data.map(row => row2str(row)).join("\n");
-        let exportFilename = "HistoryExport.csv";
+        let exportFilename = $('#nickname').html() + " " + new Date(Math.round(new Date().getTime()/1000) * 1000).toLocaleString() + ".csv";
         let csvData = new Blob(["\ufeff" + csv], {type: 'text/csv;charset=utf-8;'});
         //IE11 & Edge
         if (navigator.msSaveBlob) {
