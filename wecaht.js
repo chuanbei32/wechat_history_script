@@ -6,7 +6,7 @@
 // @author chuanbei32
 // @iconURL
 // @updateURL https://raw.githubusercontent.com/chuanbei32/wechat_history_script/main/wecaht.js
-// @match *://mp.weixin.qq.com/*
+// @match https://mp.weixin.qq.com/mp/profile_ext/*
 // @grant GM_xmlhttpRequest
 // @grant unsafeWindow
 // @require https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
